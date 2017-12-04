@@ -14,5 +14,5 @@ public class TaeJunController {
 	public String qaBoardList () {
 		
 		return "TaeJun/main";
-	}
+	}//end qaBoardList
 }

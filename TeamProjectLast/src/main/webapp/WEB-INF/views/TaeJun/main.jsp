@@ -13,7 +13,7 @@
 <!-- bootstrap CSS -->
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>::TITLE::</title>
+<title>::질문/답변 게시판::</title>
 <style>
 	select { 
 		width: 100px; /* 원하는 너비설정 */
@@ -36,13 +36,13 @@
 		
 			<div class="navbar-header">
 			
-			<a class="navbar-brand" href="/ex02/board/list">홈페이지</a></div>
+			<a class="navbar-brand" href="/ex02">홈페이지</a></div>
 			<ul class="nav navbar-nav">
 				<li><a href="/ex02/board/write">새 글 작성</a></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
-				<form class="navbar-form navbar-left" action="/ex02/board/search" method="get">
+				<form class="navbar-form navbar-left" action="" method="get">
 				<select class="selectpicker" name="searchType">
 					<option value="1">작성자</option>
 					<option value="2">제목</option>
@@ -62,17 +62,17 @@
 					Member loginResult = (Member) session.getAttribute("loginResult");
 					if(loginResult!=null) {
 						userId=loginResult.getMid();
-						out.print("<li><a href=\"/ex02/member/info\"><span class=\"glyphicon glyphicon-user\"></span>"+loginResult.getMid()+"</li>");
-						out.print("<li><a href=\"/ex02/member/logout\"></span> 로그아웃</a></li>");
+						out.print("<li><a href=\"\"><span class=\"glyphicon glyphicon-user\"></span>"+loginResult.getMid()+"</li>");
+						out.print("<li><a href=\"\"></span> 로그아웃</a></li>");
 					}else {
 						userId="손님";
-						out.print("<li><a href=\"/ex02/member/register\"><span class=\"glyphicon glyphicon-user\"></span> 회원가입</a></li>");
-						out.print("<li><a href=\"/ex02/member/login\"><span class=\"glyphicon glyphicon-log-in\"></span> 로그인</a></li>");
+						out.print("<li><a href=\"\"><span class=\"glyphicon glyphicon-user\"></span> 회원가입</a></li>");
+						out.print("<li><a href=\"\"><span class=\"glyphicon glyphicon-log-in\"></span> 로그인</a></li>");
 					}
 				} catch (NullPointerException e) {
 					userId="손님";
-					out.print("<li><a href=\"/ex02/member/register\"><span class=\"glyphicon glyphicon-user\"></span> 회원가입</a></li>");
-					out.print("<li><a href=\"/ex02/member/login\"><span class=\"glyphicon glyphicon-log-in\"></span> 로그인</a></li>");
+					out.print("<li><a href=\"\"><span class=\"glyphicon glyphicon-user\"></span> 회원가입</a></li>");
+					out.print("<li><a href=\"\"><span class=\"glyphicon glyphicon-log-in\"></span> 로그인</a></li>");
 				}
 				%>
 				
@@ -82,8 +82,8 @@
 	</nav>
 
 	<div class="jumbotron">
-		<h1 align="center">::TITLE!::</h1>
-		<h3 align="right">- TEXT...</h3>
+		<h1 align="center">::질문 답변 게시판입니다::</h1>
+		<h3 align="right">- HanTaeJun...</h3>
 	</div>
 	
 </div>
