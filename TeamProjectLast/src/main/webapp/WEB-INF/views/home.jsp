@@ -12,13 +12,12 @@
 <!-- bootstrap CSS -->
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Home</title>
+	<title>Main Page</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
+<h1>Hello world!</h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+메인 홈페이지가 될 화면입니다.
 </body>
 </html>
