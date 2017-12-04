@@ -11,7 +11,7 @@
 	
 	<!-- bean : 스프링 프레임 워크가 생성해서 관리하는 자바 객체 -->
 	<bean id="dataSource" name="dataSource" class="oracle.jdbc.pool.OracleDataSource">
-		<property name="URL" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="URL" value="jdbc:oracle:thin:@192.168.11.30:1521:xe"></property>
 		<property name="user" value="scott"></property>
 		<property name="password" value="tiger"></property>
 	</bean>
